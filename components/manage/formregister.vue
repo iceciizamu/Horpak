@@ -7,7 +7,7 @@
     </div>
     <b-form @submit ="onSubmit" @reset="onReset">
       <b-form-group >
-     <b-img v-if="getLine.pictureUrl == ''" center v-bind="mainProps" rounded="circle" alt="Circle image" src="~/assets/profile.png"  ></b-img>
+     <b-img v-if="getLine.pictureUrl == ''" center v-bind="mainProps" rounded="circle" alt="Image" src="~/assets/profile.png"  ></b-img>
        <b-img v-else center v-bind="mainProps" rounded="circle" alt="Circle image" :src="getLine.pictureUrl"  ></b-img>
       </b-form-group>
       <b-form-group>
@@ -94,7 +94,7 @@ Vue.use(Vuelidate)
        if(liff.isLoggedIn()){
          liff.getProfile().then(profile =>  {
            this.$store.dispatch('setLine',profile);
-           this.isDone();
+          
           //  this.profile.pictureUrl = profile.pictureUrl
           //  this.profile.displayName = profile.displayName
           //  this.profile.userId = profile.userId
