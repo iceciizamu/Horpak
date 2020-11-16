@@ -89,7 +89,7 @@ Vue.use(Vuelidate)
   export default {
    mounted(){
      liff.init({
-       //liffId:'1655214794-KqRJldvd'
+       liffId:'1655214794-0xJ9MoAo'
      }).then(()=>{
        if(liff.isLoggedIn()){
          liff.getProfile().then(profile =>  {

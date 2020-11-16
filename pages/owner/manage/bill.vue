@@ -172,7 +172,7 @@ export default {
     name:'manageUser',
     mounted(){
      liff.init({
-       //liffId:'1655214794-KqRJldvd'
+       liffId:'1655214794-XG1pdjEj'
      }).then(()=>{
        if(liff.isLoggedIn()){
          liff.getProfile().then(profile =>  {
